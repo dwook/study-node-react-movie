@@ -6,7 +6,15 @@ function GridCard({ image, movieId, movieName }) {
     <Col lg={6} md={8} xs={12}>
       <div style={{ position: "relative" }}>
         <a href={`/movie/${movieId}`}>
-          <img src={image} alt={movieName} style={{ width: "100%" }} />
+          <div
+            style={{
+              width: "100%",
+              paddingTop: "150%",
+              background: `url('${image}')`,
+              backgroundSize: "100%, cover",
+              backgroundPosition: "center, center",
+            }}
+          />
         </a>
       </div>
     </Col>
